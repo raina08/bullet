@@ -1,0 +1,24 @@
+var bullet1, bullet2,bullet3,bullet4;
+var wall1,wall2,wall3,wall4;
+function setup() {
+  createCanvas(16'00,400);
+  bullet1 = createSprite(400, 200, 27, 27);
+  bullet1.shapeColor = "green";
+  bullet2 = createSprite(400, 150, 27, 27);
+  bullet2.shapeColor = "red";
+  bullet3 = createSprite(400, 100, 27, 27);
+  bullet3.shapeColor = "yellow";
+  bullet4 = createSprite(400, 50, 27, 27);
+  bullet4.shapeColor = "blue";
+   
+  wall1 = createSprite(425, 50, 5,40);
+  wall2 = createSprite(425, 100, 5, 40);
+  wall3 = createSprite(425, 150, 5, 40);
+  wall4 = createSprite(425, 200, 5, 40);
+}
+
+function draw() {
+  background(255,255,255);  
+  
+  drawSprites();
+}
